@@ -14,12 +14,11 @@
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix"
   },
-  "publishConfig": {
-  },
+  "publishConfig": {},
   "husky": {
     "hooks": {
-      "pre-commit": "run-p -n --aggregate-output format:staged lint build test"
-      ,"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "pre-commit": "run-p -n --aggregate-output format:staged lint build test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "commitlint": {
@@ -31,9 +30,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "inversify": "^5.0.1",
-    "reflect-metadata": "^0.1.13"
+    "esaucy": "^2.0.2"
   },
   "devDependencies": {
     "@types/jest": "^25.2.3",
@@ -53,7 +50,6 @@
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "ts-jest": "^26.1.0",
-    "esaucy": "1.1.1",
     "typescript": "^3.9.3"
   }
 }
